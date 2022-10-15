@@ -1,0 +1,43 @@
+name: thermal_printer
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.17.6 <3.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
+  flutter: 
+    sdk: flutter
+  flutter_native_splash: ^2.2.9
+  flutter_launcher_icons: ^0.10.0
+  blue_thermal_printer: ^1.2.3
+  fullscreen: ^1.0.3
+
+dev_dependencies: 
+  flutter_lints: ^2.0.0
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  assets: 
+    - assets/icon/
+    - assets/image/
+  uses-material-design: true
+  
+flutter_native_splash:
+  color: "#fdfdff"
+  image: assets/icon/logo-dark.png
+  android_12:
+    color: "#fdfdff"
+    image: assets/icon/logo-dark.png
+  ios: false
+  web: false
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: false
+  image_path: "assets/icon/logo-dark.png"
+  min_sdk_android: 16 # android min sdk min:16, default 21
+  
